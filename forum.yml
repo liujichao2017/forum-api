@@ -1,0 +1,14 @@
+version: '3'
+services:
+  forum-api:
+    image: forum-api:0.1
+    container_name: forum-api
+    ports:
+      # the mapping port is the one you can visit the project
+      - "8899:8888"
+    environment:
+      - TZ=Asia/Shanghai
+    network_mode: bridge
+    volumes:
+      # logs dir mapping,you can change it
+      - /Users/king/Documents/学习项目/nodejs学习/forum-log:/home/forum/logs

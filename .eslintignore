@@ -1,0 +1,13 @@
+*.sh
+node_modules
+bin
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+build
+public
+logs
+test
+Dockerfile
